@@ -1,8 +1,189 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Energy Recovery Systems in Formula 1</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+        }
+        header, footer {
+            background-color: #222;
+            color: #fff;
+            padding: 10px 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 1.8em;
+        }
+        h2, h3 {
+            color: #003366;
+        }
+        .meta {
+            font-size: 0.9em;
+            color: #555;
+        }
+        .figure {
+            border: 1px solid #ccc;
+            background-color: #fff;
+            padding: 10px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .figure img {
+            max-width: 100%;
+            height: auto;
+        }
+        .figure-caption {
+            font-size: 0.9em;
+            color: #333;
+            margin-top: 8px;
+        }
+        .references ol {
+            padding-left: 20px;
+        }
+        .timestamp-wordcount {
+            margin-top: 10px;
+            font-size: 0.9em;
+        }
+        .timestamp-wordcount span {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Energy Recovery Systems in Formula 1</h1>
+    <p class="meta">A technical review of KERS and modern hybrid power units in contemporary Formula 1.</p>
+</header>
 
-<html>
+<section class="timestamp-wordcount">
+    <h4>Page information</h4>
+    <span id="lastModified"></span>
+    <span id="wordCount"></span>
+</section>
 
-  <head>
-    <head>
-      <img src="WebBanner.png" alt="Banner" width="1200" height="300">
-      
+<main id="article">
+    <h2>Abstract</h2>
+    <p>
+        This article is a thoroughly technical review of Energy Recovery Systems (ERS) in Formula 1 from the first KERS of 2009 to the hybrid power units seen to date on the track. It explores the engineering principles of the Motor Generator Unit-Kinetic (MGU-K) and Motor Generator Unit-Heat (MGU-H) and how both units integrate with turbocharged internal combustion engines and boast extensive efficiencies and optimizations. This extensive article has technical data, thermodynamic cycles and real world applications on the track, showing how the ERS systems are a mechanical engineering and electrical assembly and environmental automotive undertaking. Thus, this is the technology that Formula 1 takes to extremes of possibility; the developments here cross over to hybrid powertrains in cars everywhere, proving how motorsport is the final proving grounds for such advanced technologies.
+    </p>
+
+    <h2>Introduction</h2>
+    <p>
+        Formula 1's power unit boasts approximately 870 horsepower today - which would be impossible without advancements in hybridisation (F1 Chronicle, 2025). Out of that number, approximately 160 hp comes strictly from energy that would be otherwise wasted as thermal loss from braking or escaping exhaust (Grix Me, 2025). Such a system is an advancement from KERS, a system that recovered energy from braking alone - Energy Recovery Systems from 2014 on encompasses much more than simply KERS; it's not just a regulatory change, but a shift in mindset in how engineers recapture and redeploy energy for maximum powertrain performance.
+    </p>
+    <p>
+        Energy Recovery Systems link the sport with an ever-evolving approach to efficient powerful operation. Since this system was mandated in 2014, it has become a part of every power unit configuration, transforming car design and race strategies ever since (Wikipedia, 2008). There are two main components through which the ERS operates. The Motor Generator Unit-Kinetic is the MGU-K that recaptures momentum of braking and the Motor Generator Unit-Heat is the MGU-H that recaptures heat - both from the exhaust gases as well as the turbocharged mechanics (Flow Racers, 2023). Together, they boast highly complex applications of thermodynamic and electrical engineering fundamentals. This article will explore how we moved from KERS units to the modern days of ERS regulations in use today, how the MGU-K and MGU-H work together cycle after cycle for cumulative benefits and how they impact lap time for teams. Understanding this technology informs not just high performance applications, but hybrid and electric vehicles becoming more common in the average consumer automotive market.
+    </p>
+
+    <h2>From KERS to ERS</h2>
+    <p>
+        The first steps toward hybridising Formula 1 came with 2009 KERS. KERS was a new construction that was initially optional but became mandatory in 2011 (Wikipedia, 2008) - KERS was designed to create increased fuel efficiency, translating to less carbon emissions while still operating near maximum potential - pushing engineered limits with fewer resources. KERS works by recuperating kinetic energy while braking - in other words, transformed into electrical energy or mechanical energy which can be used after braking when acceleration energy is most needed (Baba Automobile, 2016). While technology was relatively simplistic compared to today's constructs, KERS was revolutionary. KERS had a maximum power output of approximately 60 kilowatts (80 hp) and the limited number of revolutions available per lap only allowed 400 kilojoules which could be expended over 6.67 seconds. While this didn't mean continuous recovery efforts, it did provide a temporary boost within overtaking and acceleration zones. The added boost - even for limited use - was advantageous as it gave teams a critical edge where they might need it most (Mechanical ANITS, N.D.).
+    </p>
+    <p>
+        KERS was activated in one of two main ways: electrical battery systems and mechanical flywheel systems. The electrical systems employed by many teams - the McLaren/Mercedes teams as well as Renault and Ferrari - utilized high voltage lithium-ion batteries as well as system components including motor generators connected to the crankshaft or gearbox as well as control electronics measuring in and out of the device for comprehensive function. For example, Ferrari went with a mechanical means of a high-speed flywheel system dubbed HY-KERS. The system had a diameter of 240 mm, weighed roughly five kg and operated up to 64,500 rpm. The means of implementation worked instantaneously to readjust torque instantaneously with no downtime like battery recharge/discharge but had some added weight and gyroscopic tendencies that could complicate handling (Baba Automobile, 2016).
+    </p>
+    <p>
+        KERS suffered various failures linked to its early implementation. For example, battery systems operated too hot through charge/discharge; early systems weren't reliable with stable energies; systems added mass to weight-sensitive cars that complicated feasibility that outweighed potential benefits; drivers needed to adapt their driving styles to make the most of the energy given which some teams had a hard time relying on during race strategy conception; ultimately KERS proved feasible - and right - to take energy from braking to re-utilise energy during racing but with specific concerns that operated beyond driver control for convenience.
+    </p>
+
+    <div class="figure">
+        <!-- Replace ers-diagram.png with your actual image file name in your GitHub repo -->
+        <img src="ers-diagram.png" alt="Schematic diagram of a modern Formula 1 Energy Recovery System">
+        <div class="figure-caption">
+            Figure 1: Simplified schematic of a modern Formula 1 Energy Recovery System (ERS) showing the interaction between the internal combustion engine, MGU-K, MGU-H and energy store.
+        </div>
+    </div>
+
+    <h2>Hybrid V6 Turbo Era</h2>
+    <p>
+        The transition from such systems occurred in 2014 when Formula One regulations transitioned to require hybridised engines over gas systems. This meant transition from the previously dominant 2.4-litre V8 cars to a new push toward a 1.6-litre V6 turbocharged hybrid engine to maximise efficiency and performance while respecting trends on road cars offering sustainable performance goals more aligned with consumer interests (Wikipedia, 2008). For example, where previously V8 engines created upwards of 750 hp without hybrid advantages, the early V6s produced only roughly 710 hp early on - which meant hybridisation needed to make up the difference and prove F1 to be sustainably-minded (Wikipedia, 2008). In addition, the regulatory shift occurred at a timely trend when spectators lost interest in horsepower-based efforts - and ERS mandated energy recapturing through best efforts compared to KERS.
+    </p>
+    <p>
+        Overall, ERS recaptures energy three times better than KERS. Power output is boosted from KERS's maximum of 60 kw up to 120 kw (roughly 160 hp) through the MGU-H which recaptures heat generated through exhaust gases - all previously unrecoverable through mechanical force (Grix Me, 2025). In addition, the MGU-K is an extension of years of testing through KERS motor generators now integrated with additional forces into hybridised systems. Since 2014 this has been a required portion of every car on the grid.
+    </p>
+
+    <h2>ERS Components and Operation</h2>
+    <p>
+        Today, ERS regulation parameters established by the FIA regulate what's safe/permissible for recover efforts and competitive equalisation (FIA, 2025). For example, the MGU-K can recover up to two megajoules per lap; however, the MGU-H has no limit but often recovers between three and four per lap; teams can deploy a maximum of four megajoules per battery per lap (approximately 1.1 kWh). Only deployment is limited to 120 kw running voltage; typically running voltages exceed 600 volts depending on team regulations. This provides stability among competing teams while allowing for innovation where necessary.
+    </p>
+    <p>
+        Today there are four components for an ERS that essentially comprise an interconnected cohesive unit: MGU-K, MGU-H, Energy Store and Power Control Unit regulating parameters between each component/power source. The MGU-K is responsible for recovering kinetic energy from braking events that occur every lap. During deceleration, it functions as a generator redirecting the kinetic force from a crankshaft into its storage battery for additional kWh helpful when it's needed most. The MGU-K recaptures up to two megajoules per lap; there's conversion efficiency between 90-95% based on external forces; finally it can deliver instantaneous up to 120 kWh when called upon - and the functional response time offers no lag which negates turbo delay - which makes it great for overtaking or fuel saving efforts that support engine load.
+    </p>
+    <p>
+        However, the MGU-H is the most advanced component in any ERS today. It recaptures energy spent through exhaust speed through turbo mechanics; it also can work in reverse as an electric motor which essentially promotes quick speed without any lag time someone would expect trying to get up to speed through significant effort once out of less-than-ideal situations - or should a driver be caught without low gears trying to get out of tight situations as well. The best aspect about the MGU-H is that it recovers between three to four megajoules per lap - and there's no limit on recovery - and thus contributes more than 50% of energy compared to any other ERS component driving engine need; Flow Racers (2023) suggest that it operates consistently throughout each lap providing better performance/effectiveness.
+    </p>
+    <p>
+        The Energy Store is the central component that stores energy from all components together/for disbursement - and must be consistently charge/discharged within tight tolerances with thermal variables - which means real time feedback relevant to performance is critical to implementation purposes - great volume must be stored to provide a maximum four megajoule discharge available by regulations. It weighs between twenty-five and thirty-five kg and has approximate capacity of a simple 1.1 kWh battery after use; minimal thermal properties exist from any approach meaning aesthetic considerations for cooling benefits are vital for success.
+    </p>
+
+    <h2>Race Strategy and Thermal Limits</h2>
+    <p>
+        Such component dynamics change race strategy throughout since fuel allowances are severely limited throughout each lap (approximately one-hundred kilograms) meaning most power driver input comes from fuel saving options limiting excess power thresholds that could otherwise dominate speed efforts - therefore hybrid combinations allow Internal Combustion Engine reactions better suited for supplemental blips that allow increased speed without burning through fuel reserves over distance. For qualifying efforts teams typically implement high deployment maps that will allow for as fast output as possible within any lap since it's one more thing they can directly control about their efforts - however - as laps mount - systems must carefully balance recapturing/storing/expending based on limited challenges.
+    </p>
+    <p>
+        For example - with respect to timing of deployment - it might be good to save power for seven laps only to have excess delta thrust that can effectively power one overtake - but also defensively if it gets complacent only for someone else to get home under their rear wing needing fifty hp that bridge isn't generated without communication efforts based on saved megajoule gallons [as that's directly assigned]. Poor management creates problems; timing release windows yield improved versus ineffective results and those who push too hard get thrust off-course because they expect too much speed when they were forced to hold back due to expectations levels gained on resources saved.
+    </p>
+    <p>
+        Thermal limits play a crucial role here, too; if the Energy Store/battery/motor generator or MGU-H overheats due to excessive use efforts that are noble but ultimately meaningless due to safety concerns - component compensation will be extrapolated - and no real benefit can be gained during massive overtaking efforts.
+    </p>
+
+    <h2>Conclusion</h2>
+    <p>
+        In conclusion, Energy Recovery Systems represent Formula One's broader direction of hybridised efficient development since KERS systems were limited constructions established since 2009 - that exponentially sought new avenues over time that might have been established through small adjustments better linked as drivers got a break instead of unattainable maxed potential opportunities over time thus far - but today dominated by effective portions there's been a cumulative add-on as impact force over time seamlessly integrated between the Kinetic Recovery benefits associated with MGU-K and Thermal Recovery/Turbo Assist benefits captured through MGU-H - a full hybrid that powers the fastest ranks anywhere - not just race day but often consumer use travel as well.
+    </p>
+
+    <section class="references">
+        <h3>References</h3>
+        <ol>
+            <li>Baba Automobile (2016) <em>KERS in Formula 1</em>. [Online].</li>
+            <li>F1 Chronicle (2025) <em>How much horsepower do F1 cars have?</em>. [Online].</li>
+            <li>FIA (2025) <em>Formula 1 Technical Regulations: Power Unit</em>. [Online].</li>
+            <li>Flow Racers (2023) <em>MGU-H explained: The most complex part of an F1 hybrid power unit</em>. [Online].</li>
+            <li>Grix Me (2025) <em>Energy Recovery Systems in modern Formula 1</em>. [Online].</li>
+            <li>Mechanical ANITS (N.D.) <em>Kinetic Energy Recovery System in Formula 1</em>. [Online].</li>
+            <li>Wikipedia (2008) <em>Kinetic Energy Recovery System</em>. [Online].</li>
+        </ol>
+    </section>
+</main>
+
+<footer>
+    <p>ENG0018 Computer Laboratory – Conference Project Web Page</p>
+</footer>
+
+<script>
+    // Last modified time
+    function showLastModified() {
+        var modified = document.lastModified;
+        var element = document.getElementById("lastModified");
+        element.textContent = "Last modified time: " + modified;
+    }
+
+    // Simple word count for the article section
+    function countWords() {
+        var article = document.getElementById("article");
+        var text = article.innerText || article.textContent;
+        // Replace line breaks and tabs with spaces, then split on whitespace
+        var words = text.trim().split(/\s+/);
+        var count = words.filter(function (w) {
+            return w.length > 0;
+        }).length;
+        var wcElement = document.getElementById("wordCount");
+        wcElement.textContent = "Approximate word count (article only): " + count;
+    }
+
+    // Run when page loads
+    window.onload = function () {
+        showLastModified();
+        countWords();
+    };
+</script>
+</body>
+</html>
+
