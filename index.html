@@ -103,16 +103,49 @@
     window.onload = getLastUpdatedTime;
 </script>
 
+     <!-- //////////////////////////////////////////////////////////////////////////////// -->
+  <!-- ////////////////////////////// Word count function ////////////////////////////// -->
+  <!-- //////////////////////////////////////////////////////////////////////////////// -->
+<!-- Placeholder for total word count -->
+<p id="totalWordCount"></p>
+<hr>
+<script>
+  // Function to calculate and display word count for a specified section
+  function displayWordCount(sectionId, outputId) {
+    // Get the text content from the specified section
+    const text = document.getElementById(sectionId).textContent;
+    // Split text into words based on spaces and filter out any empty strings
+    const wordArray = text.trim().split(/\s+/);
+    // Count the words
+    const wordCount = wordArray.length;
+    // Return the word count for summing purposes
+    return wordCount;
+  }
+  // Function to calculate and display total word count from selected sections
+  function displayTotalWordCount() {
+    // Calculate word count for each section and accumulate the total
+    const IntroductionCount = displayWordCount("Introduction_InText");
+    const AnalysisCount = displayWordCount("Analysis_InText");
+    // Calculate the sum of all selected sections
+    const totalWordCount = IntroductionCount + AnalysisCount;
+    // Display the total word count
+    document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
+  }
+  // Run the function for specific sections and display total count when the page loads
+  window.onload = displayTotalWordCount;
+</script>
 
 </section>
 
 <main id="article">
-    <h2>Introdction</h2>
+    <h2>Introduction</h2>
+    <div id="Introduction_InText">
     <p>
         This article is a thoroughly technical review of Energy Recovery Systems (ERS) in Formula 1 from the first KERS of 2009 to the hybrid power units seen to date on the track. It explores the engineering principles of the Motor Generator Unit-Kinetic (MGU-K) and Motor Generator Unit-Heat (MGU-H) and how both units integrate with turbocharged internal combustion engines and boast extensive efficiencies and optimizations. This extensive article has technical data, thermodynamic cycles and real world applications on the track, showing how the ERS systems are a mechanical engineering and electrical assembly and environmental automotive undertaking. Thus, this is the technology that Formula 1 takes to extremes of possibility; the developments here cross over to hybrid powertrains in cars everywhere, proving how motorsport is the final proving grounds for such advanced technologies.
     </p>
-
+</div>
     <h2>From KERS to ERS</h2>
+        <div id="Analysis_InText">
     <p>
         Formula 1's power unit boasts approximately 870 horsepower today - which would be impossible without advancements in hybridisation (F1 Chronicle, 2025). Out of that number, approximately 160 hp comes strictly from energy that would be otherwise wasted as thermal loss from braking or escaping exhaust (Grix Me, 2025). Such a system is an advancement from KERS, a system that recovered energy from braking alone - Energy Recovery Systems from 2014 on encompasses much more than simply KERS; it's not just a regulatory change, but a shift in mindset in how engineers recapture and redeploy energy for maximum powertrain performance.
     </p>
@@ -129,14 +162,13 @@
     <p>
         KERS suffered various failures linked to its early implementation. For example, battery systems operated too hot through charge/discharge; early systems weren't reliable with stable energies; systems added mass to weight-sensitive cars that complicated feasibility that outweighed potential benefits; drivers needed to adapt their driving styles to make the most of the energy given which some teams had a hard time relying on during race strategy conception; ultimately KERS proved feasible - and right - to take energy from braking to re-utilise energy during racing but with specific concerns that operated beyond driver control for convenience.
     </p>
-
+            
     <div class="figure">
         <!-- Replace ers-diagram.png with your actual image file name in your GitHub repo -->
         <img src="ImageForArticle_9503(1).webp" alt="Schematic diagram of a modern Formula 1 Energy Recovery System">
         <div class="figure-caption">
             Figure 1: Simplified schematic of a modern Formula 1 Energy Recovery System (ERS) showing the interaction between the internal combustion engine, MGU-K, MGU-H and energy store.
-        </div>
-    </div>
+        
 
     <h2>Hybrid V6 Turbo Era</h2>
     <p>
@@ -201,7 +233,7 @@
     <p>
         In conclusion, Energy Recovery Systems represent Formula One's broader direction of hybridised efficient development since KERS systems were limited constructions established since 2009 - that exponentially sought new avenues over time that might have been established through small adjustments better linked as drivers got a break instead of unattainable maxed potential opportunities over time thus far - but today dominated by effective portions there's been a cumulative add-on as impact force over time seamlessly integrated between the Kinetic Recovery benefits associated with MGU-K and Thermal Recovery/Turbo Assist benefits captured through MGU-H - a full hybrid that powers the fastest ranks anywhere - not just race day but often consumer use travel as well.
     </p>
-
+</div>
     <section class="references">
         <h3>References</h3>
         <ol>
